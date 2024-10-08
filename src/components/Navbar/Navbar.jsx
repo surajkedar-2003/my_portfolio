@@ -1,4 +1,4 @@
-
+import { CiDark } from "react-icons/ci";
 const Navbar = () => {
   return (
     <nav className="w-full p-5 fixed top-0 z-10 bg-white/10">
@@ -11,6 +11,7 @@ const Navbar = () => {
             <li><a href="#project" className="hover:text-cyan-400">Projects</a></li>
             <li><a href="#contact" className="hover:text-cyan-400">Contact</a></li>
         </ul>
+        <CiDark className="text-2xl cursor-pointer"/>
       </div>
     </nav>
   );

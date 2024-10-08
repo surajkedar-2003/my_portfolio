@@ -1,0 +1,55 @@
+
+.mask {
+    position: absolute;
+    mask-image: url("./assets/mask.svg");
+    background: white;
+    mask-repeat: no-repeat;
+    mask-size: 30px;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+
+}
+
+
+/* App.css */
+.central-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #8b0959;
+    color: white;
+    position: absolute;
+    z-index: 2;
+}
+
+.skill-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+}
+
+.skill-item {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.skill-item:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+.skill-item:nth-child(2) { top: 50%; left: 100%; transform: translateY(-50%) translateX(-100%); }
+.skill-item:nth-child(3) { bottom: 0; left: 50%; transform: translateX(-50%); }
+.skill-item:nth-child(4) { top: 50%; left: 0; transform: translateY(-50%); }
+.skill-item:nth-child(5) { top: 0; left: 75%; transform: translateX(-50%); }
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,28 @@
+@keyframes blobAnimation {
+    0% {
+      transform: scale(1);
+      border-radius: 40% 60% 50% 50%;
+    }
+    50% {
+      transform: scale(1.1);
+      border-radius: 50% 50% 60% 40%;
+    }
+    100% {
+      transform: scale(1);
+      border-radius: 40% 60% 50% 50%;
+    }
+  }
+  
+  .blob {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(45deg, #3b3175, #dc3db5);
+    position: relative;
+    animation: blobAnimation 5s infinite ease-in-out;
+  }
+  
+  img{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+  }

@@ -12,6 +12,9 @@ export default {
         textBase: '#8f9091',
       },
     },
+    backgroundImage:{
+      circularLight: 'repeating-radial-gradient(white 0px, white 1px, black 5px, black 100px);'
+    },
   },
   plugins: [],
 }

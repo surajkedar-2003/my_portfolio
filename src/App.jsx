@@ -1,16 +1,19 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Navbar from './components/Navbar/Navbar.jsx';
+import Hero from './pages/Hero.jsx';
 import Shapes from './components/Shapes.jsx';
-import About from './components/About';
-import Contact from './components/Contact';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
+import Skills from './pages/Skills.jsx';
+import Projects from './pages/Projects.jsx';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-black text-white">
       <Navbar />
-      <Shapes />
       <Hero />
       <About />
+      <Skills/>
+      <Projects/>
       <Contact />
     </div>
   );
